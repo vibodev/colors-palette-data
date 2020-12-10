@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "declarationDir":"./@types/",
+    // "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noLib": false,
+    "sourceMap": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es2015",
+    "baseUrl": ".",
+  },
+  "exclude": [
+    "./node_modules"
+  ],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.vue",
+  ],
+}

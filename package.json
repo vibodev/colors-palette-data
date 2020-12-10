@@ -1,7 +1,30 @@
 {
   "name": "colors-palette-data",
+  "description": "精选色板数据",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Vibo",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/vEditor.min.js",
+  "types": "@types/src/index.d.ts",
+  "scripts": {
+    "dev": "webpack-dev-server --config build/webpack.dev.js",
+    "build": "webpack --config build/webpack.prod.js",
+    "clean": "rimraf ./dist/*"
+  },
+  "devDependencies": {
+    "@types/webpack-env": "^1.16.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.4.0",
+    "css-loader": "^5.0.1",
+    "rimraf": "^3.0.2",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-extension-reloader": "^1.1.4",
+    "webpack-merge": "^5.1.4",
+    "webpackbar": "^4.0.0"
+  }
 }
