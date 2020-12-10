@@ -5,12 +5,12 @@
   "author": "Vibo",
   "license": "MIT",
   "main": "dist/index.js",
-  "types": "@types/src/index.d.ts",
+  "types": "@types/index.d.ts",
   "scripts": {
-    "dev": "webpack-dev-server --config build/webpack.dev.js",
+    "dev": "webpack --watch --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.prod.js",
     "clean": "rimraf ./dist/*",
-    "install":"npm run build"
+    "postinstall":"npm run build"
   },
   "devDependencies": {
     "@types/webpack-env": "^1.16.0",

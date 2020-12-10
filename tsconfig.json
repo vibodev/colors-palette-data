@@ -4,6 +4,7 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "module": "commonjs",
     "declarationDir": "./@types/",
@@ -15,9 +16,10 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es2015",
-    "baseUrl": "."
+    "target": "es5",
+    "baseUrl": ".",
+    "types": ["webpack-env"]
   },
   "exclude": ["./node_modules"],
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/**/*.*"]
 }
