@@ -4,12 +4,13 @@
   "version": "1.0.0",
   "author": "Vibo",
   "license": "MIT",
-  "main": "dist/vEditor.min.js",
+  "main": "dist/index.js",
   "types": "@types/src/index.d.ts",
   "scripts": {
     "dev": "webpack-dev-server --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.prod.js",
-    "clean": "rimraf ./dist/*"
+    "clean": "rimraf ./dist/*",
+    "install":"npm run build"
   },
   "devDependencies": {
     "@types/webpack-env": "^1.16.0",
